@@ -65,7 +65,7 @@
              (+++) Configure the priority and enable the NVIC for the transfer complete
                  interrupt on the two DMA Streams. The output stream should have higher
                  priority than the input stream.
-                       
+
     *** Configuration of ADC, groups regular/injected, channels parameters ***
   ==============================================================================
   [..]
@@ -103,7 +103,7 @@
            user can specify the value of timeout according to his end application      
        (+) To read the ADC converted values, use the HAL_ADC_GetValue() function.
        (+) Stop the ADC peripheral using HAL_ADC_Stop()
-       
+
      *** Interrupt mode IO operation ***    
      ===================================
      [..]    
@@ -125,7 +125,7 @@
        (+) In case of transfer Error, HAL_ADC_ErrorCallback() function is executed and user can 
            add his own code by customization of function pointer HAL_ADC_ErrorCallback
        (+) Stop the ADC peripheral using HAL_ADC_Stop_DMA()
-                    
+
      *** ADC HAL driver macros list ***
      ============================================= 
      [..]
@@ -303,7 +303,7 @@ static void ADC_DMAHalfConvCplt(DMA_HandleTypeDef *hdma);
   *         channels group (scan mode activation, continuous mode activation,
   *         External trigger source and edge, DMA continuous request after the  
   *         last transfer and End of conversion selection).
-  *             
+  *
   * @param  hadc pointer to a ADC_HandleTypeDef structure that contains
   *         the configuration information for the specified ADC.  
   * @retval HAL status
