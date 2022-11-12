@@ -81,13 +81,13 @@
         HAL_NVIC_EnableIRQ().
          
     (#) To get the level of a pin configured in input mode use HAL_GPIO_ReadPin().
-            
+
     (#) To set/reset the level of a pin configured in output mode use 
         HAL_GPIO_WritePin()/HAL_GPIO_TogglePin().
     
     (#) To lock pin configuration until next reset use HAL_GPIO_LockPin().
 
-                 
+
     (#) During and just after reset, the alternate functions are not 
         active and the GPIO pins are configured in input floating mode (except JTAG
         pins).
@@ -140,7 +140,7 @@
 /** @defgroup GPIO_Exported_Functions_Group1 Initialization and de-initialization functions
   *  @brief    Initialization and Configuration functions
   *
-@verbatim    
+@verbatim
  ===============================================================================
               ##### Initialization and de-initialization functions #####
  ===============================================================================
@@ -207,7 +207,7 @@ void HAL_GPIO_Init(GPIO_TypeDef  *GPIOx, GPIO_InitTypeDef *GPIO_Init)
       {
         /* Check the parameters */
         assert_param(IS_GPIO_PULL(GPIO_Init->Pull));
-        
+
         /* Activate the Pull-up or Pull down resistor for the current IO */
         temp = GPIOx->PUPDR;
         temp &= ~(GPIO_PUPDR_PUPDR0 << (position * 2U));
